@@ -19,7 +19,7 @@ interface IFood {
   image: string;
 }
 
-export function Food({ food, handleEditFood, handleDelete }: FoodProps) {
+export default function Food({ food, handleEditFood, handleDelete }: FoodProps) {
   const { available } = food;
   const [isAvailable, setIsAvailable] = useState(available);
 
